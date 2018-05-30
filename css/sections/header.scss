@@ -1,0 +1,155 @@
+//nav 
+.header {
+    margin-bottom: 80px;
+}
+
+.header__top {
+    width: 100%;
+    height: 135px;
+    @include flexbox();
+    @include flex-direction(row);
+    @include justify-content(space-between);
+    @include align-items(center);
+}
+.header__phone {
+    padding: 5px 0 5px 40px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    color: #000;
+    background: url(../img/phone_black.svg) left no-repeat;
+    span {
+        font-weight: bold;
+    }
+}
+.logo {
+    height: 45px;
+    width: 216px;
+    background: url(../img/logo_black.svg) center no-repeat;
+}
+.social__links {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.fb {
+    background: url(../img/fb_black.svg) center no-repeat;
+}
+.in {
+    background: url(../img/in_black.svg) center no-repeat;
+}
+// menu
+.menu {
+    @include flexbox();
+    @include flex-direction(row);
+    @include justify-content(center);
+    @include align-items(center);
+    margin: 0 30px 0 0;
+} 
+.menu__item {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 11px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+.menu__list {
+    list-style: none;    
+    background: url(../img/ellipse_grey.svg) left no-repeat;
+    padding: 5px 30px;
+}
+.home {
+    display: inline-block;
+    margin-right: 25px;
+    width: 15px;
+    height: 15px;
+    background: url(../img/home.svg) center no-repeat;
+}
+// nav INDEX
+/*
+.header {
+    width: 100%;
+    color: #fff;
+    background: url(../img/header_bg2.png) center right no-repeat;
+    background-color: #191919; 
+}
+
+
+.header__phone {
+    color: #fff;
+    background: url(../img/phone.png) left no-repeat;
+}
+.logo {
+    background: url(../img/logo.png) center no-repeat;
+}
+.fb {
+    background: url(../img/fb.png) center no-repeat;
+}
+.in {
+    background: url(../img/in.png) center no-repeat;
+}
+
+.menu__item {
+    color: #fff;
+}
+.menu__list {
+    background: url(../img/ellipse.png) left no-repeat;
+}
+
+.header__mid {
+    margin-top: 40px;
+}
+.header__text {
+    font-size: 44px;
+    font-family: 'Exo2-SemiBold';
+    span {
+        color: $yellow;
+    }
+}
+.header__span {
+    border-left: 4px solid $yellow;
+    padding-left: 20px;
+    margin-top: 40px;
+}
+.header__bot {
+    margin-top: 80px;
+    margin-bottom: 120px;
+}
+.header__inline {
+    display: inline-block;
+    width: 230px;
+}
+.form__input {
+    width: 220px;
+    height: 50px;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    margin-right: 10px;
+    color: #fff;
+}
+.form__button {
+    background-color: $yellow;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #333333;
+    font-size: 13px;
+    border: 0;
+    width: 220px;
+    height: 50px;
+}
+
+*/
+///////////////////
+
+
+
+
+
+
+
