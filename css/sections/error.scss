@@ -1,0 +1,27 @@
+.error {
+    height: 474px;
+    @include flexbox();
+    @include flex-direction(row);
+    @include justify-content(center);
+}
+.error__logo {
+    display: inline-block;
+    width: 316px;
+    height: 474px;
+    background: url(../img/404.png) center no-repeat;
+    margin-right: 80px;
+}
+.error__text {
+    h3 {
+        padding-top: 70px;
+        font-size: 31px;
+        font-family: 'Exo2-SemiBold';
+    }
+    h1 {
+        font-size: 84px;
+        font-family: 'Exo2-SemiBold';
+        margin-top: -20px;
+    }
+    p {
+    }
+} 

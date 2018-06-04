@@ -8,6 +8,89 @@
     <meta name="viewport" content="width=1080">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    <style>
+        .header {
+            width: 100%;
+            color: #fff;
+            background: url(img/header_bg2.png) center right no-repeat;
+            background-color: #191919;
+        }
+        
+        .header__phone {
+            color: #fff;
+            background: url(img/phone.png) left no-repeat;
+        }
+        
+        .logo {
+            background: url(img/logo.png) center no-repeat;
+        }
+        
+        .fb {
+            background: url(img/fb.png) center no-repeat;
+        }
+        
+        .in {
+            background: url(img/in.png) center no-repeat;
+        }
+        
+        .menu__item {
+            color: #fff;
+        }
+        
+        .menu__list {
+            background: url(../img/ellipse.png) left no-repeat;
+        }
+        
+        .header__mid {
+            margin-top: 40px;
+        }
+        
+        .header__text {
+            font-size: 44px;
+            font-family: 'Exo2-SemiBold';
+            span {
+                color: #F2CA00;
+            }
+        }
+        
+        .header__span {
+            border-left: 4px solid #F2CA00;
+            padding-left: 20px;
+            margin-top: 40px;
+        }
+        
+        .header__bot {
+            margin-top: 50px;
+            margin-bottom: 100px;
+        }
+        
+        .header__inline {
+            display: inline-block;
+            width: 230px;
+        }
+        
+        .form__input {
+            width: 220px;
+            height: 50px;
+            padding: 10px;
+            background-color: transparent;
+            border: 1px solid #fff;
+            margin-right: 10px;
+            color: #fff;
+        }
+        
+        .form__button {
+            background-color: #F2CA00;
+            font-family: 'Roboto', sans-serif;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #333333;
+            font-size: 13px;
+            border: 0;
+            width: 220px;
+            height: 50px;
+        }
+    </style>
 </head>
 
 <body>
@@ -15,62 +98,252 @@
         <div class="maincontent">
             <header class="header">
                 <div class="container">
+                    <div class="container__inner">
+                        <!-----=== header_top ===----->
 
-                    <!-----=== header_top ===----->
-
-                    <div class="header__top">
-                        <div class="header__contacts">
-                            <a href="#" class="header__phone">+38 (093) - 581 - 10 - 17</a>
+                        <div class="header__top">
+                            <div class="header__contacts">
+                                <a href="#" class="header__phone">+38 (093) - 581 - 10 - 17</a>
+                            </div>
+                            <div class="logo"></div>
+                            <div class="social">
+                                <a href="facebook.com" class="fb social__links"></a>
+                                <a href="instagram.com" class="in social__links"></a>
+                            </div>
                         </div>
-                        <div class="logo"></div>
-                        <div class="social">
-                            <a href="facebook.com" class="fb social__links"></a>
-                            <a href="instagram.com" class="in social__links"></a>
+
+                        <!-----=== nav ===----->
+                        <nav class="nav">
+                            <ul class="menu">
+                                <a href="#" class="home"></a>
+                                <li class="menu__list"><a href="#" class="menu__item">Варианты обучения</a></li>
+                                <li class="menu__list"><a href="#" class="menu__item">Кто мы</a></li>
+                                <li class="menu__list"><a href="#" class="menu__item">Доп. услуги</a></li>
+                                <li class="menu__list"><a href="#" class="menu__item">Новости</a></li>
+                            </ul>
+                        </nav>
+
+                        <!-----=== header_mid ===----->
+                        <div class="header__mid">
+                            <h1 class="header__text"><span>Будьте уверены</span> <br> в каждом вираже</h1>
+                            <div class="header__span">
+                                <p>Хоть мы сами канеш и не уверены,<br> но вам правда стоит на это посмотреть:</p>
+                            </div>
                         </div>
-                    </div>
 
-                    <!-----=== nav ===----->
-                    <nav class="nav">
-                        <ul class="menu">
-                            <a href="#" class="home"></a>
-                            <li class="menu__list"><a href="#" class="menu__item">Варианты обучения</a></li>
-                            <li class="menu__list"><a href="#" class="menu__item">Кто мы</a></li>
-                            <li class="menu__list"><a href="#" class="menu__item">Доп. услуги</a></li>
-                            <li class="menu__list"><a href="#" class="menu__item">Новости</a></li>
-                        </ul>
-                    </nav>
-
-                    <!-----=== header_mid ===----->
-                    <div class="header__mid">
-                        <h1 class="header__text"><span>Будьте уверены</span> <br> в каждом вираже</h1>
-                        <div class="header__span">
-                            <p>Хоть мы сами канеш и не уверены,<br> но вам правда стоит на это посмотреть:</p>
+                        <!-----=== header_bot ===----->
+                        <div class="header__bot">
+                            <p class="header__inline">Ваше имя</p>
+                            <p class="header__inline">Ваш Email</p>
+                            <form class="form">
+                                <input class="form__input" />
+                                <input class="form__input" />
+                                <button class="form__button" type="submit" form="application">Записаться </button>
+                            </form>
                         </div>
-                    </div>
-
-                    <!-----=== header_bot ===----->
-                    <div class="header__bot">
-                        <p class="header__inline">Ваше имя</p>
-                        <p class="header__inline">Ваш Email</p>
-                        <form class="form">
-                            <input class="form__input" />
-                            <input class="form__input" />
-                            <button class="form__button" type="submit" form="application">Записаться </button>
-                        </form>
                     </div>
                 </div>
             </header>
             <div class="content container">
-                <div class="error">
-                    <div class="error__logo"></div>
-                    <div class="error__text">
-                        <h3>Ошибка</h3>
-                        <h1>404</h1>
-                        <p>Страница не найдена. Перезагрузите страницу, <br>
-или вернитесь на главную.</p>
+
+                <!-----=== training ===----->
+                <div class="training">
+                    <div class="container__inner">
+                        <h2 class="title">Варианты обучения:</h2>
+                        <p>Здесь предтавлены варианты обучения <br> в нашей школе. Дополнительные услуги ниже.</p>
+                        <div class="training__wrapper">
+                            <div class="training__item">
+                                <h3 class="title">Уличный Райдер</h3>
+                                <div class="training__details">
+                                    <p><span>Длительность:</span> 3 месяца</p>
+                                    <p><span>Стоимость:</span> 2500 грн</p>
+                                </div>
+                                <a href="#" class="training__email">Записаться</a>
+                            </div>
+                            <div class="training__item">
+                                <h3 class="title">Уличный Райдер</h3>
+                                <div class="training__details">
+                                    <p><span>Длительность:</span> 3 месяца</p>
+                                    <p><span>Стоимость:</span> 2500 грн</p>
+                                </div>
+                                <a href="#" class="training__email">Записаться</a>
+                            </div>
+                            <div class="training__item">
+                                <h3 class="title">Уличный Райдер</h3>
+                                <div class="training__details">
+                                    <p><span>Длительность:</span> 3 месяца</p>
+                                    <p><span>Стоимость:</span> 2500 грн</p>
+                                </div>
+                                <a href="#" class="training__email">Записаться</a>
+                            </div>
+                            <div class="training__item">
+                                <h3 class="title">Уличный Райдер</h3>
+                                <div class="training__details">
+                                    <p><span>Длительность:</span> 3 месяца</p>
+                                    <p><span>Стоимость:</span> 2500 грн</p>
+                                </div>
+                                <a href="#" class="training__email">Записаться</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="yellow"></div>
+            </div>
+
+            <!-----=== about ===----->
+            <div class="about">
+                <div class="about__container">
+                    <div class="about__wrapper">
+                        <div class="container__inner">
+                            <div class="about__header">
+                                <h1 class="title">О нас</h1>
+                                <p>Здесь предтавлены варианты обучения <br> в нашей школе. Дополнительные услуги ниже.</p>
+                            </div>
+                            <div class="about__menu">
+                                <ul class="about__list">
+                                    <li class="about__item"><a href="#" class="about__link">Мы все</a></li>
+                                    <li class="about__item about__item-active"><a href="#" class="about__link">Белоцкий Олег</a></li>
+                                    <li class="about__item"><a href="#" class="about__link">Даниленко Татьяна</a></li>
+                                    <li class="about__item"><a href="#" class="about__link">Верёвкин Дмитрий</a></li>
+                                </ul>
+                            </div>
+                            <div class="about__content">
+                                <div class="about__img">
+                                    <img src="img/index/oleg.png" alt="">
+                                </div>
+                                <div class="about__text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dictum lacinia lacus in hendrerit. In vel neque fringilla lectus tristique scelerisque. Nunc quis odio dui.</p>
+                                    <div class="about__teacher">
+                                        <h4 class="title">Белоцкий Олег</h4>
+                                        <p>Троекратный чемпион Мира по онанизму</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="content container">
+
+                <!-----=== services ===----->
+                <div class="services">
+                    <div class="container__inner">
+                        <h3 class="title">Дополнительные услуги:</h3>
+                        <p>Здесь предтавлены варианты обучения <br> в нашей школе. Дополнительные услуги ниже.</p>
+                        <div class="services__list">
+                            <div class="services__item">
+                                <div class="service__logo">
+                                    <a href="#" class="services__link">Открытие<br>
+Категории “А”</a>
+                                </div>
+
+                            </div>
+                            <div class="services__item">
+                                <div class="service__logo">
+                                    <a href="#" class="services__link">Сервис, запчасти
+обслуживание</a>
+                                </div>
+                            </div>
+                            <div class="services__item">
+                                <div class="service__logo">
+                                    <a href="#" class="services__link">Помощь в Выборе 
+Экипировки</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="services__list services__list-bot">
+
+                            <div class="services__item">
+                                <div class="service__logo">
+                                    <a href="#" class="services__link">Покупка<br>
+мотоцикла</a>
+                                </div>
+                            </div>
+                            <div class="services__item">
+                                <div class="service__logo">
+                                    <a href="#" class="services__link">Сопровождение<br>
+в гонках</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-----=== news ===----->
+                <div class="news">
+                    <div class="container__inner">
+                        <div class="news__header">
+                            <h3 class="title">Дополнительные услуги:</h3>
+                            <p>Здесь предтавлены варианты обучения <br> в нашей школе. Дополнительные услуги ниже.</p>
+                        </div>
+                        <div class="news__content-index">
+                            <div class="news-block">
+                                <div class="news-block__img-wrap">
+                                    <img src="img/baba.png" alt="" class="news-block__img">
+                                </div>
+                                <a href="#" class="news-block__link">
+                                    <h3 class="news--block_title">Баба на моте</h3>
+                                    <p class="news--block_desc">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a venenatis felis. Duis posuere nisi massa
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="news-block">
+                                <div class="news-block__img-wrap">
+                                    <img src="img/baba.png" alt="" class="news-block__img">
+                                </div>
+                                <a href="#" class="news-block__link">
+                                    <h3 class="news--block_title">Баба на моте</h3>
+                                    <p class="news--block_desc">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a venenatis felis. Duis posuere nisi massa
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="news-block">
+                                <div class="news-block__img-wrap">
+                                    <img src="img/baba.png" alt="" class="news-block__img">
+                                </div>
+                                <a href="#" class="news-block__link">
+                                    <h3 class="news--block_title">Баба на моте</h3>
+                                    <p class="news--block_desc">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a venenatis felis. Duis posuere nisi massa
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="news-block">
+                                <div class="news-block__img-wrap">
+                                    <img src="img/baba.png" alt="" class="news-block__img">
+                                </div>
+                                <a href="#" class="news-block__link">
+                                    <h3 class="news--block_title">Баба на моте</h3>
+                                    <p class="news--block_desc">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a venenatis felis. Duis posuere nisi massa
+                                    </p>
+                                </a>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-----=== news ===----->
+                <div class="contacts">
+                    <div class="container__inner">
+                        <div class="contacts__header">
+                            <h3 class="title">Дополнительные услуги:</h3>
+                            <p>Здесь предтавлены варианты обучения <br> в нашей школе. Дополнительные услуги ниже.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -95,11 +368,10 @@
             </ul>
         </div>
         <div class="footer__block">
-           <div class="footer__phone">+38 093 <span>581 10 17</span></div>
-           <div class="footer__adress">
-           <p class="footer__adress">г. Киев, улица Ак. Булаховского 5Д
-кв. 46</p>
-       </div>
+            <div class="footer__phone">+38 093 <span>581 10 17</span></div>
+            <div class="footer__adress">
+                <p class="footer__adress">г. Киев, улица Ак. Булаховского 5Д кв. 46</p>
+            </div>
         </div>
 
     </footer>
