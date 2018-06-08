@@ -1,9 +1,41 @@
 //404
 .yellow {
+    padding-top: 60px;
     width: 100%;
-    height: 160px;
+    height: 390px;
+    
+    background: url(../img/qs.svg) 520px 0 no-repeat;
     background-color: $yellow;
     margin-top: 50px;
+    .header__bot {
+        margin-top: 80px;
+    }
+    .header__inline {
+            display: inline-block;
+            width: 230px;
+        }
+        
+        .form__input {
+            width: 220px;
+            height: 50px;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #fff;
+            margin-right: 10px;
+            color: #fff;
+            font-size: 13px;
+        }
+        .form__button {
+            background-color: #191919;
+            font-family: 'Roboto', sans-serif;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #fff;
+            font-size: 13px;
+            border: 0;
+            width: 220px;
+            height: 50px;
+        }
 }
 
 .training {
@@ -149,6 +181,9 @@ box-shadow: 0px 15px 25px 0px rgba(0,0,0,0.15);
         font-size: 18px;
     }
 }
+.services {
+    padding-bottom: 80px;
+}
 .services__list {
     @include flexbox();
     @include flex-direction(row);
@@ -179,16 +214,44 @@ box-shadow: 0px 15px 25px 0px rgba(0,0,0,0.15);
 //news
 .news {
     background-color: #FAFAFA;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 .news__header {
     text-align: right;
+    padding-bottom: 80px;
 }
 .news__content-index {
     width: 100%;
     @include flexbox();
     @include flex-direction(row);
-    /*@include justify-content(space-between);*/
+    @include justify-content(space-between);
     .news-block {
         margin: 0;
+    }
+}
+
+//contacts
+.contacts {
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+.contacts__header {
+    margin-bottom: 80px;
+}
+.contacts__map {
+    width: 470px;
+    height: 470px;
+    float: left;
+    margin-right: 40px;
+}
+.contacts__details {
+    height: 470px;
+    @include flexbox();
+    @include flex-direction(column);
+    @include justify-content(space-between);
+    .social__links {
+        margin-left: 0;
+        margin-right: 20px;
     }
 }
