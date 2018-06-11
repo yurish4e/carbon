@@ -25,11 +25,14 @@
     }
 }
 //teachers
+.teachers__wrapper {
+    padding-top: 60px;
+}
 .teachers {
     @include flexbox();
     @include flex-direction(row);
     @include justify-content(center);
-    margin: 40px 0 60px;
+    margin: 40px 0 200px;
 }
 .teachers__item {
     width: 180px;

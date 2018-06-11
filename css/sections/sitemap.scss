@@ -2,6 +2,7 @@
     @include flexbox();
     @include flex-direction(row);
     @include justify-content(space-between);
+    margin-bottom: 120px;
 }
 .sitemap__right {
     width: 480px;

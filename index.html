@@ -8,95 +8,13 @@
     <meta name="viewport" content="width=1080">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <style>
-        .header {
-            width: 100%;
-            color: #fff;
-            background: url(img/header_bg2.png) center right no-repeat;
-            background-color: #191919;
-        }
-        
-        .header__phone {
-            color: #fff;
-            background: url(img/phone.png) left no-repeat;
-        }
-        
-        .logo {
-            background: url(img/logo.png) center no-repeat;
-        }
-        
-        .fb_white {
-            background: url(img/fb.png) center no-repeat;
-        }
-        
-        .in_white {
-            background: url(img/in.png) center no-repeat;
-        }
-        
-        .menu__item {
-            color: #fff;
-        }
-        
-        .menu__list {
-            background: url(../img/ellipse.png) left no-repeat;
-        }
-        
-        .header__mid {
-            margin-top: 40px;
-        }
-        
-        .header__text {
-            font-size: 44px;
-            font-family: 'Exo2-SemiBold';
-            span {
-                color: #F2CA00;
-            }
-        }
-        
-        .header__span {
-            border-left: 4px solid #F2CA00;
-            padding-left: 20px;
-            margin-top: 40px;
-        }
-        
-        .header__bot {
-            margin-top: 50px;
-            margin-bottom: 100px;
-        }
-        
-        .header__inline {
-            display: inline-block;
-            width: 230px;
-        }
-        
-        .form__input {
-            width: 220px;
-            height: 50px;
-            padding: 10px;
-            background-color: transparent;
-            border: 1px solid #fff;
-            margin-right: 10px;
-            color: #fff;
-        }
-        
-        .form__button {
-            background-color: #F2CA00;
-            font-family: 'Roboto', sans-serif;
-            text-transform: uppercase;
-            font-weight: bold;
-            color: #333333;
-            font-size: 13px;
-            border: 0;
-            width: 220px;
-            height: 50px;
-        }
-    </style>
+
 </head>
 
 <body>
     <div class="wrapper">
         <div class="maincontent">
-            <header class="header">
+            <header class="header header-index">
                 <div class="container">
                     <div class="container__inner">
                         <!-----=== header_top ===----->
@@ -161,25 +79,25 @@
                                 <a href="#" class="training__email">Записаться</a>
                             </div>
                             <div class="training__item">
-                                <h3 class="title">Уличный Райдер</h3>
+                                <h3 class="title">Убийца Треков</h3>
                                 <div class="training__details">
-                                    <p><span>Длительность:</span> 3 месяца</p>
+                                    <p><span>Длительность:</span> 12 месяцев</p>
                                     <p><span>Стоимость:</span> 2500 грн</p>
                                 </div>
                                 <a href="#" class="training__email">Записаться</a>
                             </div>
                             <div class="training__item">
-                                <h3 class="title">Уличный Райдер</h3>
+                                <h3 class="title">Мотокросс</h3>
                                 <div class="training__details">
-                                    <p><span>Длительность:</span> 3 месяца</p>
+                                    <p><span>Длительность:</span> 2 дня</p>
                                     <p><span>Стоимость:</span> 2500 грн</p>
                                 </div>
                                 <a href="#" class="training__email">Записаться</a>
                             </div>
                             <div class="training__item">
-                                <h3 class="title">Уличный Райдер</h3>
+                                <h3 class="title">Стант Райдер</h3>
                                 <div class="training__details">
-                                    <p><span>Длительность:</span> 3 месяца</p>
+                                    <p><span>Длительность:</span> 8 месяцев</p>
                                     <p><span>Стоимость:</span> 2500 грн</p>
                                 </div>
                                 <a href="#" class="training__email">Записаться</a>
@@ -214,7 +132,7 @@
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dictum lacinia lacus in hendrerit. In vel neque fringilla lectus tristique scelerisque. Nunc quis odio dui.</p>
                                     <div class="about__teacher">
                                         <h4 class="title">Белоцкий Олег</h4>
-                                        <p>Троекратный чемпион Мира по онанизму</p>
+                                        <p>Троекратный чемпион Мира по<br> онанизму</p>
                                     </div>
 
                                 </div>
@@ -276,57 +194,64 @@
 
 
                 <!-----=== news ===----->
-                <div class="news">
+                <div class="news-index">
                     <div class="container__inner">
-                        <div class="news__header">
-                            <h3 class="title">Дополнительные услуги:</h3>
+                        <div class="news-index__header">
+                            <h3 class="title">Чё как?</h3>
                             <p>Здесь предтавлены варианты обучения <br> в нашей школе. Дополнительные услуги ниже.</p>
                         </div>
-                        <div class="news__content-index">
-                            <div class="news-block">
+                        <div class="about-index__menu">
+                            <ul class="about__list">
+                                <li class="about__item"><a href="#" class="about__link">Новости</a></li>
+                                <li class="about__item about__item-active"><a href="#" class="about__link">Видео</a></li>
+
+                            </ul>
+                        </div>
+                        <div class="news-index__content-index">
+                         <div class="news-block">
+                            <a href="#" class="news-block__link">
                                 <div class="news-block__img-wrap">
                                     <img src="img/baba.png" alt="" class="news-block__img">
                                 </div>
-                                <a href="#" class="news-block__link">
-                                    <h3 class="news--block_title">Баба на моте</h3>
-                                    <p class="news--block_desc">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a venenatis felis. Duis posuere nisi massa
-                                    </p>
-                                </a>
-                            </div>
-                            <div class="news-block">
+                                <h3 class="news--block_title">Баба на моте</h3>
+                            </a>
+                            <p class="news--block_desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a venenatis felis. Duis posuere nisi massa
+                            </p>
+                        </div>
+<div class="news-block">
+                            <a href="#" class="news-block__link">
                                 <div class="news-block__img-wrap">
                                     <img src="img/baba.png" alt="" class="news-block__img">
                                 </div>
-                                <a href="#" class="news-block__link">
-                                    <h3 class="news--block_title">Баба на моте</h3>
-                                    <p class="news--block_desc">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a venenatis felis. Duis posuere nisi massa
-                                    </p>
-                                </a>
-                            </div>
-                            <div class="news-block">
+                                <h3 class="news--block_title">Баба на моте</h3>
+                            </a>
+                            <p class="news--block_desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a venenatis felis. Duis posuere nisi massa
+                            </p>
+                        </div>
+<div class="news-block">
+                            <a href="#" class="news-block__link">
                                 <div class="news-block__img-wrap">
                                     <img src="img/baba.png" alt="" class="news-block__img">
                                 </div>
-                                <a href="#" class="news-block__link">
-                                    <h3 class="news--block_title">Баба на моте</h3>
-                                    <p class="news--block_desc">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a venenatis felis. Duis posuere nisi massa
-                                    </p>
-                                </a>
-                            </div>
-                            <div class="news-block">
+                                <h3 class="news--block_title">Баба на моте</h3>
+                            </a>
+                            <p class="news--block_desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a venenatis felis. Duis posuere nisi massa
+                            </p>
+                        </div>
+<div class="news-block">
+                            <a href="#" class="news-block__link">
                                 <div class="news-block__img-wrap">
                                     <img src="img/baba.png" alt="" class="news-block__img">
                                 </div>
-                                <a href="#" class="news-block__link">
-                                    <h3 class="news--block_title">Баба на моте</h3>
-                                    <p class="news--block_desc">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a venenatis felis. Duis posuere nisi massa
-                                    </p>
-                                </a>
-                            </div>
+                                <h3 class="news--block_title">Баба на моте</h3>
+                            </a>
+                            <p class="news--block_desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a venenatis felis. Duis posuere nisi massa
+                            </p>
+                        </div>
 
 
 
@@ -346,15 +271,18 @@
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2467.1729489143063!2d30.334847273409892!3d50.46965638213803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ccb68e632003%3A0xadb9bb12a97719a!2z0LLRg9C70LjRhtGPINCQ0LrQsNC00LXQvNGW0LrQsCDQkdGD0LvQsNGF0L7QstGB0YzQutC-0LPQviwgNdCULCDQmtC40ZfQsiwgMDIwMDA!5e0!3m2!1sru!2sua!4v1528305486987" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
                         </div>
                         <div class="contacts__details">
-                            <h3 class="contacts__title">+38 093 <span>581 10 17</span></h3>
-                            <h3 class="contacts__title">+38 093 <span>581 10 17</span></h3>
-                            <p class="contacts__email">qsconsult@gmail.com</p>
-                            <p class="contacts__email">Режим работы ПТ - ВС
-(Не звоните ночью, не гоните)</p>
-                       <div class="social">
-                            <a href="facebook.com" class="fb social__links"></a>
-                            <a href="instagram.com" class="in social__links"></a>
-                        </div>
+                            <div class="contacts__phone">
+                                <h3 class="contacts__title">+38 093 <span>581 10 17</span></h3>
+                                <h3 class="contacts__title">+38 093 <span>581 10 17</span></h3>
+                            </div>
+
+                            
+                            <a href="mailto:qsconsult@gmail.com" class="contacts__email">qsconsult@gmail.com</a>
+                            <p class="contacts__email">Режим работы ПТ - ВС<br> (Не звоните ночью, не гоните)</p>
+                            <div class="social">
+                                <a href="facebook.com" class="fb social__links"></a>
+                                <a href="instagram.com" class="in social__links"></a>
+                            </div>
                             <p class="contacts__email">г. Киев, улица Ак. Булаховского 5Д кв. 46</p>
                         </div>
                     </div>

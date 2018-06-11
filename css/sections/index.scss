@@ -22,7 +22,7 @@
             background-color: #fff;
             border: 1px solid #fff;
             margin-right: 10px;
-            color: #fff;
+            color: #000;
             font-size: 13px;
         }
         .form__button {
@@ -35,15 +35,25 @@
             border: 0;
             width: 220px;
             height: 50px;
+            cursor: pointer;
+        }
+    .form__button:hover {
+        background-color: lighten(#000,15%);
+    }
+    
+        .form__input:focus {
+            outline: 0;
+            border: 1px solid rgba(0,0,0,1);
         }
 }
 
 .training {
     height: 850px;
     padding-bottom: 50px;
+    padding-top: 60px;
     margin-top: -80px;
-    background-color: #fff;
-}
+    background-color: #fff; 
+}  
 .training__wrapper {
     @include flexbox();
     @include flex-direction(row);
@@ -129,6 +139,7 @@ box-shadow: 0px 15px 25px 0px rgba(0,0,0,0.15);
         margin: 30px 0 80px;
     }
 }
+
 .about__list {
     margin: 0;
     padding: 0;
@@ -181,6 +192,15 @@ box-shadow: 0px 15px 25px 0px rgba(0,0,0,0.15);
         font-size: 18px;
     }
 }
+.about__teacher {
+    p {
+        opacity: 0.5;
+        font-size: 13px;
+    }
+    
+}
+
+// services
 .services {
     padding-bottom: 80px;
 }
@@ -195,8 +215,27 @@ box-shadow: 0px 15px 25px 0px rgba(0,0,0,0.15);
     padding: 90px 0 0 100px;
 }
 .service__logo {
-    background: url(../img/index/service_1.svg) left top no-repeat;
     padding-top: 50px;
+}
+.services__list {
+    .services__item:nth-child(1) .service__logo {
+    background: url(../img/index/service_1.svg) left top no-repeat;
+}
+.services__item:nth-child(2) .service__logo {
+    background: url(../img/index/service_2.svg) left top no-repeat;
+}
+.services__item:nth-child(3) .service__logo {
+    background: url(../img/index/service_3.svg) left top no-repeat;
+}
+
+}
+.services__list-bot {
+    .services__item:nth-child(1) .service__logo {
+    background: url(../img/index/service_4.svg) left top no-repeat;
+}
+.services__item:nth-child(2) .service__logo {
+    background: url(../img/index/service_5.svg) left top no-repeat;
+}
 }
 .services__link {
     display: inline-block;
@@ -212,16 +251,35 @@ box-shadow: 0px 15px 25px 0px rgba(0,0,0,0.15);
     @include justify-content(center);
 }
 //news
-.news {
+.news-index {
     background-color: #FAFAFA;
     padding-top: 80px;
     padding-bottom: 80px;
+    
 }
-.news__header {
+.about-index__menu {
+    margin-bottom: 40px;
+    .about__link {
+    color: #333333;
+    display: inline-block;
+    min-width: 80px;
+    padding-bottom: 10px;
+}
+    .about__item {
+        padding: 0;
+        opacity: 0.5;
+    }    
+.about__item-active {
+    opacity: 1;
+    background: url(../img/index/line.svg) left bottom no-repeat;
+}
+}
+
+.news-index__header {
     text-align: right;
     padding-bottom: 80px;
 }
-.news__content-index {
+.news-index__content-index {
     width: 100%;
     @include flexbox();
     @include flex-direction(row);
@@ -251,7 +309,136 @@ box-shadow: 0px 15px 25px 0px rgba(0,0,0,0.15);
     @include flex-direction(column);
     @include justify-content(space-between);
     .social__links {
+        margin-top: 120px;
+        margin-bottom: 80px;
         margin-left: 0;
         margin-right: 20px;
     }
 }
+.contacts__phone {
+    height: 85px;
+    margin-bottom: 30px;
+}
+.contacts__title {
+    margin: 0;
+    margin-bottom: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    span {
+        font-weight: bold;
+    }
+}
+.contacts__email {
+    text-decoration: none;
+    opacity: 0.5;
+    color: #333333;
+    margin-bottom: 0;
+}
+
+/* header */
+
+  .header-index {
+            width: 100%;
+            color: #fff;
+            background: url(../img/header_bg2.png) center right no-repeat;
+            background-color: #191919;
+      .header__phone {
+            color: #fff;
+            background: url(../img/phone.svg) left no-repeat;
+        }
+        
+        .logo {
+            background: url(../img/logo.png) center no-repeat;
+        }
+        
+        .fb_white {
+            background: url(../img/fb.png) center no-repeat;
+        }
+        
+        .in_white {
+            background: url(../img/in.png) center no-repeat;
+        }
+        
+        .menu__item {
+            color: #fff;
+        }
+        
+        .menu__list {
+            background: url(../img/ellipse.png) left no-repeat;
+        }
+        
+        .header__mid {
+            margin-top: 40px;
+        }
+        
+        .header__text {
+            font-size: 44px;
+            font-family: 'Exo2-SemiBold';
+            span {
+                color: #F2CA00;
+            }
+        }
+        
+        .header__span {
+            border-left: 4px solid #F2CA00;
+            padding-left: 20px;
+            margin-top: 40px;
+        }
+        
+        .header__bot {
+            margin-top: 50px;
+            margin-bottom: 100px;
+        }
+        
+        .header__inline {
+            display: inline-block;
+            width: 230px;
+        }
+        
+        .form__input {
+            width: 220px;
+            height: 50px;
+            padding-left: 20px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 13px;
+            background-color: transparent;
+            border: 1px solid rgba(255,255,255,0.3);
+            margin-right: 10px;
+            color: #fff;
+        }
+        .form__input:focus {
+            outline: 0;
+            border: 1px solid rgba(255,255,255,1);
+        }
+        .form__input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #fff;
+            opacity: 1; /* Firefox */
+        }
+
+        .form__input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: #fff;
+        }
+
+        .form__input::-ms-input-placeholder { /* Microsoft Edge */
+            color: #fff;
+        }
+        
+        .form__button {
+            background-color: #F2CA00;
+            font-family: 'Roboto', sans-serif;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #333333;
+            font-size: 13px;
+            border: 0;
+            width: 220px;
+            height: 50px;
+            cursor: pointer;
+            outline: 0;
+        }
+        .form__button:hover {
+            background-color: darken($yellow,5%);
+        }
+        }
+        
+        
