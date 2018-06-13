@@ -3,11 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <title>Document</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
     <meta name="viewport" content="width=1080">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/script.js"></script>
 </head>
 
 <body>
@@ -16,18 +19,20 @@
 
             <div class="container__inner">
                 <!-----=== header ===----->
-                <header class="header">
+                 <header class="header">
 
                     <!-----=== header_top ===----->
 
                     <div class="header__top">
                         <div class="header__contacts">
-                            <a href="#" class="header__phone">+38 (093) <span>· 581 · 10 · 17</span></a>
+                            <a href="#" class="header__phone pc">+38 (093) - 581 - 10 - 17</a>
+                            <span class="menu__button"></span>
                         </div>
                         <div class="logo"></div>
                         <div class="social">
-                            <a href="facebook.com" class="fb social__links"></a>
-                            <a href="instagram.com" class="in social__links"></a>
+                            <a href="facebook.com" class="fb social__links pc"></a>
+                            <a href="instagram.com" class="in social__links pc"></a>
+                            <a href="#" class="header__phone mobile"></a>
                         </div>
                     </div>
 
@@ -60,22 +65,25 @@
             </div>
             <!-----=== contact form ===----->
             <div class="yellow">
-                <div class="container__inner">
-                    <h3 class="title">Записаться на курс</h3>
-                            <p>Оставьте Ваши данные, и наши менеджера с Вами<br>
-свяжуться в ближайшее время</p>
-                            <div class="header__bot">
-                            <p class="header__inline">Ваше имя</p>
-                            <p class="header__inline">Номер телефона</p>
-                            <p class="header__inline">Ваш Email</p>
-                            <form class="form">
-                                <input class="form__input" placeholder="Андрей" />
-                                <input class="form__input" placeholder="+38 (ХХХ) ХХХ ХХ ХХ" />
-                                <input class="form__input" placeholder="raven161@gmail.com" />
-                                <button class="form__button" type="submit" form="application">Записаться </button>
-                            </form>
-                        </div>
+                <div class="mobile mobile__form container__inner">
+                    <button class="form__button" type="submit" form="application">Записаться </button>
                 </div>
+                <div class="container__inner pc">
+                    <h3 class="title">Записаться на курс</h3>
+                    <p>Оставьте Ваши данные, и наши менеджера с Вами<br> свяжуться в ближайшее время</p>
+                    <div class="header__bot">
+                        <p class="header__inline">Ваше имя</p>
+                        <p class="header__inline">Номер телефона</p>
+                        <p class="header__inline">Ваш Email</p>
+                        <form class="form">
+                            <input class="form__input" placeholder="Андрей" />
+                            <input class="form__input" placeholder="+38 (ХХХ) ХХХ ХХ ХХ" />
+                            <input class="form__input" placeholder="raven161@gmail.com" />
+                            <button class="form__button" type="submit" form="application">Записаться </button>
+                        </form>
+                    </div>
+                </div>
+
             </div>
             
             <div class="container__inner teachers__wrapper">
@@ -108,32 +116,38 @@
         </div>
     </div>
 
-    <footer class="footer container">
-        <div class="footer__block">
-            <div class="logo_black"></div>
-        </div>
-        <div class="footer__block">
-            <ul class="footer__menu">
-                <li class="footer__list footer__list_active"><a href="#" class="footer__link">Главная</a></li>
-                <li class="footer__list"><a href="#" class="footer__link">Варианты обучения</a></li>
-                <li class="footer__list"><a href="#" class="footer__link">Кто мы</a></li>
-                <li class="footer__list"><a href="#" class="footer__link">Конфиденциальность</a></li>
-            </ul>
-        </div>
-        <div class="footer__block">
-            <ul class="footer__menu">
-                <li class="footer__list"><a href="#" class="footer__link">Доп. Услуги</a></li>
-                <li class="footer__list"><a href="#" class="footer__link">Новости</a></li>
-                <li class="footer__list"><a href="#" class="footer__link">Карта сайта</a></li>
-            </ul>
-        </div>
-        <div class="footer__block">
-            <div class="footer__phone">+38 093 <span>581 10 17</span></div>
-            <div class="footer__adress">
-                <p class="footer__adress">г. Киев, улица Ак. Булаховского 5Д кв. 46</p>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__block">
+                <div class="logo_black"></div>
             </div>
+            <div class="footer__block pc">
+                <ul class="footer__menu">
+                    <li class="footer__list footer__list_active"><a href="#" class="footer__link">Главная</a></li>
+                    <li class="footer__list"><a href="#" class="footer__link">Варианты обучения</a></li>
+                    <li class="footer__list"><a href="#" class="footer__link">Кто мы</a></li>
+                    <li class="footer__list"><a href="#" class="footer__link">Конфиденциальность</a></li>
+                </ul>
+            </div>
+            <div class="footer__block pc">
+                <ul class="footer__menu">
+                    <li class="footer__list"><a href="#" class="footer__link">Доп. Услуги</a></li>
+                    <li class="footer__list"><a href="#" class="footer__link">Новости</a></li>
+                    <li class="footer__list"><a href="#" class="footer__link">Карта сайта</a></li>
+                </ul>
+            </div>
+            <div class="footer__block">
+               <div class="social mobile">
+                <a href="facebook.com" class="fb social__links"></a>
+                <a href="instagram.com" class="in social__links"></a>
+            </div>
+                <div class="footer__phone">+38 093 <span>581 10 17</span></div>
+                <div class="footer__adress">
+                    <p class="footer__adress">г. Киев, улица Ак. Булаховского 5Д кв. 46</p>
+                </div>
+            </div>
+            
         </div>
-
     </footer>
 </body>
 

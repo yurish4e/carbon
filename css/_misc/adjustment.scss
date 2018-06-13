@@ -5,6 +5,9 @@ $container-width: 1180px;
 * {
     box-sizing: border-box; 
 }
+/*.mobile {
+        display: none !important;
+    }*/
 body, html {
     width: 100%;
     height: 100%;
@@ -48,8 +51,8 @@ p {
 }
 .content {
     -webkit-box-shadow: 0px 0px 60px 0px rgba(0,0,0,0.1);
--moz-box-shadow: 0px 0px 60px 0px rgba(0,0,0,0.1);
-box-shadow: 0px 0px 60px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 60px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 60px 0px rgba(0,0,0,0.1);
     background-color: #fff;
     margin-bottom: 70px;
 }
@@ -59,5 +62,6 @@ footer {
     height: $footer-height;
     min-width: $container-width;
     width: 100%;
-    margin-top: -$footer-height;
+    /*margin-top: -$footer-height;*/
+    margin-top: 0;
 }

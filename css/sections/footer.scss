@@ -1,4 +1,7 @@
 .footer {
+    /*margin: 0;*/
+}
+.footer .container {
     padding: 40px 0 120px;
     @include flex-direction(row);
 }
